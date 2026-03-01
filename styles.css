@@ -427,7 +427,45 @@ section {
 
 /* Services */
 .services-section {
+    position: relative;
+    overflow: hidden;
     background-color: var(--clr-surface);
+}
+
+.services-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.services-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 248, 245, 0.7);
+    /* Light overlay to keep vibrant theme legible */
+    z-index: 1;
+}
+
+.services-header {
+    margin-bottom: 4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 10;
 }
 
 .services-header {
@@ -441,10 +479,9 @@ section {
 }
 
 .service-card {
-    background-color: var(--clr-surface-light);
-    border: 1px solid rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 3rem 2rem;
-    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
 }
 
@@ -452,7 +489,7 @@ section {
     transform: translateY(-5px);
     border-color: rgba(46, 204, 113, 0.3);
     /* primary color border on hover */
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .card-icon {

@@ -55,6 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Services Background Parallax
+    gsap.to('.services-bg', {
+        yPercent: 20,
+        ease: 'none',
+        scrollTrigger: {
+            trigger: '.services-section',
+            start: 'top bottom',
+            end: 'bottom top',
+            scrub: true
+        }
+    });
+
     // Booking Background Parallax
     gsap.to('.booking-bg', {
         yPercent: 20,

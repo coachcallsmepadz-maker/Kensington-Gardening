@@ -534,6 +534,13 @@ section {
     align-items: center;
 }
 
+.booking-logo {
+    height: 80px;
+    margin-bottom: 2rem;
+    filter: brightness(0) opacity(0.85);
+    /* Matches the dark green branding approach on light backgrounds */
+}
+
 .contact-label {
     display: block;
     font-size: 0.8rem;

@@ -1,17 +1,17 @@
 /* UI Variables - CINEMATIC DARK NATURE THEME */
 :root {
     /* Colors */
-    --clr-bg: #0A0F0D;
+    --clr-bg: #F4F8F5;
     /* Almost black with green tint */
-    --clr-surface: #141C18;
+    --clr-surface: #FFFFFF;
     /* Slightly lighter dark green */
-    --clr-surface-light: #1E2823;
-    --clr-primary: #C9A25E;
+    --clr-surface-light: #F0F6F2;
+    --clr-primary: #2ECC71;
     /* Premium dull gold */
-    --clr-primary-hover: #DFB773;
-    --clr-text: #E5E9E6;
+    --clr-primary-hover: #27AE60;
+    --clr-text: #1E3B2A;
     /* Off white with green tint */
-    --clr-text-dim: #8B9992;
+    --clr-text-dim: #5C7A68;
 
     /* Typography */
     --font-heading: 'Playfair Display', serif;
@@ -23,8 +23,9 @@
 
     /* Effects */
     --transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-    --glass-bg: rgba(20, 28, 24, 0.6);
-    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-bg: rgba(255, 255, 255, 0.75);
+    /* Light frosted glass */
+    --glass-border: rgba(255, 255, 255, 0.8);
 }
 
 /* Base Reset */
@@ -87,7 +88,7 @@ p {
 
 .section-desc {
     font-size: 1.15rem;
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
 }
 
 .center-text {
@@ -142,7 +143,7 @@ section {
 
 .btn-primary {
     background-color: var(--clr-primary);
-    color: #000;
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
@@ -150,7 +151,7 @@ section {
 }
 
 .btn-outline {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(30, 59, 42, 0.2);
     color: var(--clr-text);
     padding: 0.75rem 1.5rem;
 }
@@ -180,7 +181,7 @@ section {
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    background: linear-gradient(to bottom, rgba(10, 15, 13, 0.9) 0%, rgba(10, 15, 13, 0) 100%);
+    background: linear-gradient(to bottom, rgba(244, 248, 245, 0.9) 0%, rgba(244, 248, 245, 0) 100%);
     z-index: 1000;
     transition: var(--transition);
 }
@@ -211,7 +212,7 @@ section {
 
 .brand-logo {
     height: 60px;
-    filter: brightness(0) invert(1) opacity(0.8);
+    filter: brightness(0) opacity(0.9);
 }
 
 /* Ensuring the logo is light */
@@ -279,8 +280,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Dark gradient emphasizing the moody dark theme */
-    background: linear-gradient(135deg, rgba(10, 15, 13, 0.95) 0%, rgba(10, 15, 13, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(244, 248, 245, 0.4) 100%);
     z-index: -1;
 }
 
@@ -299,8 +299,8 @@ section {
     align-items: center;
     gap: 0.5rem;
     backdrop-filter: blur(8px);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 0.5rem 1rem;
     border-radius: 30px;
     margin-bottom: 2rem;
@@ -316,7 +316,7 @@ section {
 }
 
 .rating-label {
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
     font-size: 0.85rem;
 }
 
@@ -327,7 +327,7 @@ section {
 .hero-lead {
     max-width: 600px;
     font-size: 1.2rem;
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
     line-height: 1.8;
     margin-bottom: 3rem;
 }
@@ -344,7 +344,7 @@ section {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
 }
 
 .scroll-line {
@@ -450,7 +450,7 @@ section {
 
 .service-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(201, 162, 94, 0.3);
+    border-color: rgba(46, 204, 113, 0.3);
     /* primary color border on hover */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
@@ -486,7 +486,7 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(10, 15, 13, 0.85);
+    background: rgba(244, 248, 245, 0.85);
     z-index: 1;
 }
 
@@ -515,7 +515,7 @@ section {
 
 .contact-note {
     font-size: 0.9rem;
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
     font-style: italic;
 }
 
@@ -530,7 +530,7 @@ section {
 }
 
 .hours-grid .dim {
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
 }
 
 .booking-form-wrapper {
@@ -579,11 +579,11 @@ section {
 .footer-logo {
     height: 40px;
     margin-bottom: 1rem;
-    filter: brightness(0) invert(1) opacity(0.5);
+    filter: brightness(0) opacity(0.8);
 }
 
 .brand-col p {
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
 }
 
 .footer-col h4 {
@@ -596,7 +596,7 @@ section {
 }
 
 .footer-col p {
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
     line-height: 1.8;
     margin-bottom: 0;
 }
@@ -605,7 +605,7 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding-top: 2rem;
     font-size: 0.85rem;
-    color: var(--clr-text-dim);
+    color: var(--clr-text-main);
 }
 
 /* Responsive adjustments */
